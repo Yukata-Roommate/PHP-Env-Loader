@@ -3,7 +3,7 @@
 namespace YukataRm\EnvLoader;
 
 /**
- * Load environment variables
+ * Base Env Loader
  * 
  * @package YukataRm\EnvLoader
  */
@@ -25,13 +25,10 @@ abstract class BaseEnvLoader
      */
     function __construct()
     {
-        // get Dotenv instance
         $dotenv = Dotenv::createImmutable($this->path);
 
-        // load .env file
         $dotenv->safeLoad();
 
-        // set environment variables
         $this->setEnv();
     }
 
