@@ -18,7 +18,7 @@ abstract class BaseEnvLoader
      * 
      * @var string
      */
-    protected $path = __DIR__ . "/../../../../../";
+    protected string $path = __DIR__ . "/../../../../../";
 
     /**
      * constructor
