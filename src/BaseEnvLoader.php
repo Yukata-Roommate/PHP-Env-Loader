@@ -49,7 +49,7 @@ abstract class BaseEnvLoader
      * @param string $key
      * @return string|null
      */
-    protected function getEnv(string $key): ?string
+    protected function getEnv(string $key): string|null
     {
         return $_ENV[$key] ?? null;
     }
@@ -73,7 +73,7 @@ abstract class BaseEnvLoader
      * @param string $key
      * @return string|null
      */
-    protected function getEnvStringNullable(string $key): ?string
+    protected function getEnvStringNullable(string $key): string|null
     {
         return $this->getEnv($key);
     }
@@ -99,7 +99,7 @@ abstract class BaseEnvLoader
      * @param string $key
      * @return int|null
      */
-    protected function getEnvIntNullable(string $key): ?int
+    protected function getEnvIntNullable(string $key): int|null
     {
         $value = $this->getEnv($key);
 
@@ -127,7 +127,7 @@ abstract class BaseEnvLoader
      * @param string $key
      * @return bool|null
      */
-    protected function getEnvBoolNullable(string $key): ?bool
+    protected function getEnvBoolNullable(string $key): bool|null
     {
         $value = $this->getEnv($key);
 
@@ -155,7 +155,7 @@ abstract class BaseEnvLoader
      * @param string $key
      * @return float|null
      */
-    protected function getEnvFloatNullable(string $key): ?float
+    protected function getEnvFloatNullable(string $key): float|null
     {
         $value = $this->getEnv($key);
 
