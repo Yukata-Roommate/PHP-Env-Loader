@@ -23,7 +23,7 @@ abstract class BaseEnvLoader
     /**
      * constructor
      */
-    function __construct()
+    public function __construct()
     {
         $dotenv = Dotenv::createImmutable($this->path);
 
