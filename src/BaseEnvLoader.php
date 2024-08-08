@@ -10,7 +10,18 @@ namespace YukataRm\EnvLoader;
 abstract class BaseEnvLoader
 {
     /*----------------------------------------*
-     * Constructor
+     * Constants
+     *----------------------------------------*/
+
+    /**
+     * key name prefix default value
+     * 
+     * @var string
+     */
+    const KEY_PREFIX_DEFAULT = "YUKATA_ROOMMATE_";
+
+    /*----------------------------------------*
+     * Properties
      *----------------------------------------*/
 
     /**
@@ -19,6 +30,10 @@ abstract class BaseEnvLoader
      * @var string
      */
     protected string $path = __DIR__ . "/../../../../../";
+
+    /*----------------------------------------*
+     * Constructor
+     *----------------------------------------*/
 
     /**
      * constructor
