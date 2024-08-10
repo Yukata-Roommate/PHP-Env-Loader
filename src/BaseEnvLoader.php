@@ -18,7 +18,7 @@ abstract class BaseEnvLoader
      * 
      * @var string
      */
-    const KEY_PREFIX_DEFAULT = "YUKATA_ROOMMATE_";
+    const KEY_PREFIX_DEFAULT = "YR_";
 
     /*----------------------------------------*
      * Properties
