@@ -2,6 +2,8 @@
 
 namespace YukataRm\EnvLoader;
 
+use Dotenv\Dotenv;
+
 /**
  * Base Env Loader
  * 
